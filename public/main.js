@@ -12,9 +12,9 @@ function setupPlant(plant) {
   $(".main").append($(`<div class='plant'>
         <div class='plant-text'>
           <h2>${plant.name}</h2>
-          <h1>
+          <h3>
             <time datetime="${ plant.watered || '' }"></time>
-          </h1>
+          </h3>
           <form method="POST" action="/water-plants">
             <input type="hidden" name="plant" value="${plant.name}" />
           <button>I just watered the plant!</button>
@@ -32,9 +32,9 @@ function removePlant(plant) {
   $("main").delete($(`<div class='plant'>
     <div class='plant-text'>
       <h2>${plant.name}</h2>
-      <h1>
+      <h3>
         <time datetime="${ plant.watered || '' }"></time>
-      </h1>
+      </h3>
       <form method="POST" action="/remove-plant">
       <input type="hidden" name="plant" value="${plant.name}" />
       <button>I just watered the plant!</button>

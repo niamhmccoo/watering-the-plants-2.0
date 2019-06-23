@@ -16,13 +16,38 @@ nav {
 
 .plant-text,
 .new-plant,
-.main {
+.main,
+form {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
 .plant,
-.plant-text{
+.new-plant {
     width: 12em;
+}
+
+.plant-text>h2 {
+    width: 100%;
+}
+
+button,
+input {
+    padding: 1em;
+    border-radius: 5em;
+    border: solid thin gray;
+}
+
+input, button {
+    margin: 1em;
+}
+
+input {
+    background-color: #f2fef5;
+}
+
+label {
+    font-size: 1.17em;
+    font-weight: bold;
 }
