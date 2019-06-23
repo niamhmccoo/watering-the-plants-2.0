@@ -33,6 +33,11 @@ app.post("/water-plants", function (req, res) {
 
 app.post("/create-plant", function (req, res) {
     console.log("Yay plants!");
+    database.insert({
+        name: req.fields.plantText
+    }, function (error, result) {
+        res.redirect("/");
+    });
 });
 
 app.get("/get-plants", function (req, res) {
