@@ -4,8 +4,8 @@ let formidable = require("express-formidable");
 let fs = require("fs");
 let Database = require("nedb");
 
-app.listen(3000, function () {
-    console.log("Server is listening & ready on port 3000.");
+app.listen(7000, function () {
+    console.log("Server is listening & ready on port 7000.");
 });
 
 app.use(express.static("public"));
