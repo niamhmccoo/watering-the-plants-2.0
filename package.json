@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/niamhmccoo/watering-the-plants-2.0/issues"
   },
-  "homepage": "https://github.com/niamhmccoo/watering-the-plants-2.0#readme"
+  "homepage": "https://github.com/niamhmccoo/watering-the-plants-2.0#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
