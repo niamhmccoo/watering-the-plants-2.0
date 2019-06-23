@@ -18,7 +18,6 @@ let database = new Database({
 });
 
 app.post("/water-plants", function (req, res) {
-    // console.log("Watered!");
     let name = req.fields.plant;
     database.update({
         name: name
@@ -32,7 +31,6 @@ app.post("/water-plants", function (req, res) {
 });
 
 app.post("/create-plant", function (req, res) {
-    // console.log("Yay plants!");
     database.insert({
         name: req.fields.plantText
     }, function (error, result) {
@@ -41,7 +39,6 @@ app.post("/create-plant", function (req, res) {
 });
 
 app.get("/get-plants", function (req, res) {
-    // console.log("Plant Party!");
     database.find({}).sort({
         name: 1
     }).exec(function (err, docs) {

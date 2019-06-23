@@ -1,11 +1,10 @@
 fetch('/get-plants')
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(myJson) {
-    myJson.forEach(setupPlant);
-    // console.log(JSON.stringify(myJson));
-  });
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (myJson) {
+        myJson.forEach(setupPlant);
+    });
 
 function setupPlant(plant) {
     let name = plant.name;
