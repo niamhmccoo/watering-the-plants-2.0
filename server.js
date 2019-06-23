@@ -1,6 +1,8 @@
-let express = require('express');
+let express = require("express");
 let app = express();
 
-app.listen(6000, function() {
-    console.log('Server is listening & ready on port 6000.');
+app.listen(3000, function() {
+    console.log("Server is listening & ready on port 3000.");
 });
+
+app.use(express.static("public"));
