@@ -47,6 +47,7 @@ app.post("/remove-plant", function (req, res) {
     });
 });
 
+
 app.get("/get-plants", function (req, res) {
     database.find({}).sort({
         name: 1

@@ -43,6 +43,7 @@ function removePlant(plant) {
   </div>`))
 };
 
+
 function formatTimeAgo(timeInMilliseconds) {
     let timeInS = Math.round(timeInMilliseconds / 1000);
     let secondsOnly = timeInS % 60;
