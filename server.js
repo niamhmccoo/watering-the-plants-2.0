@@ -38,6 +38,15 @@ app.post("/create-plant", function (req, res) {
     });
 });
 
+app.post("/remove-plant", function (req, res) {
+    let name = req.fields.plant;
+    database.remove({
+        name: name
+    }, {}, function () {
+        res.redirect("/");
+    });
+});
+
 app.get("/get-plants", function (req, res) {
     database.find({}).sort({
         name: 1
