@@ -1,0 +1,19 @@
+{
+  "name": "watering-the-plants-2.0-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niamhmccoo/watering-the-plants-2.0.git"
+  },
+  "author": "niamhmccoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niamhmccoo/watering-the-plants-2.0/issues"
+  },
+  "homepage": "https://github.com/niamhmccoo/watering-the-plants-2.0#readme"
+}
