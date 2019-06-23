@@ -10,13 +10,25 @@ app.listen(3000, function () {
 
 app.use(express.static("public"));
 
+app.use(formidable());
+
 let database = new Database({
     filename: __dirname + "/database/plants.json",
     autoload: true
 });
 
 app.post("/water-plants", function (req, res) {
-    console.log("Watered!");
+    // console.log("Watered!");
+    let name = req.fields.plant;
+    database.update({
+        name: name
+    }, {
+        $set: {
+            watered: new Date()
+        }
+    }, {}, function () {
+        res.redirect("/");
+    });
 });
 
 app.post("/create-plant", function (req, res) {
